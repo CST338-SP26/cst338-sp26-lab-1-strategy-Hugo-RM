@@ -59,5 +59,8 @@ public abstract class Monster {
         return Objects.hash(getItems(), getMaxHp(), getHp(), getXp());
     }
 
-    public abstract String toString();
+    @Override
+    public String toString() {
+        return "hp=" + hp.toString() + "/" + maxHp.toString();
+    }
 }
